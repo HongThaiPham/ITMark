@@ -1,0 +1,147 @@
+* {margin : 0px; padding : 0px; }
+
+
+form bb { position:relative ; }
+label  { position:absolute; margin-left: 5px; color:#FA8609;}
+
+
+
+
+#form1 
+	{ 
+	background: url ();
+	width: 100%;	
+	margin:auto;
+	text-align: right;
+	}
+
+.body 
+{
+
+}
+	
+
+/* login logout */
+#toptop{
+	height: 42px;
+	margin-top: -3px;
+	background-image: url(images/hinhnen.png) ;
+}
+#topCon{
+	width: 1070px;
+	margin: auto;
+	font-size: 12px;
+	padding: 6px;
+	color: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+}
+/* / login logout */
+
+
+#header {
+	background: transparent url(../images/banner.jpg);  /* nen header */
+	height:193px;
+	width: 1050px;
+    /*overflow: ;*/
+	/*margin-top: -14px;*/
+}
+	
+	
+#menu
+{
+	
+}
+
+
+
+#sidebar    /* thanh sidebar ben phai */
+{   width: 248px;
+	height: 100%;
+	float: right;
+	border: solid #09C 1px ;
+	
+}
+
+#featureitem{   /* quang cáo */
+	width: 795px;
+	height: 230px;
+	float: left;
+	text-align: left;
+	border: solid #09C 1px ;
+
+}
+
+#sidemain   /* phan noi dung */ 
+{   width: 100%;
+	height: 100%;
+	float: left;
+	border: solid #09C 0px ;
+
+}
+
+
+
+
+#footer   /* footer khong lien quan gi den trang  */
+{
+	height:120px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+}
+
+#aa{
+	width: 1050px;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	}
+
+#aa a:link { 
+    color: white; 
+	text-decoration: underline;
+}
+#aa a:hover { 
+    color: #ff9933; 
+	text-decoration: underline;
+}
+
+a{color: blue ; text-decoration:none}
+a:hover{color:#ff9933; text-decoration:underline}
+a.image,a.image:hover,a img {border:0}
+
+
+
+#container
+{
+	width: 1050px;
+	min-height: 700px;
+	/*height: 100%;*/
+	border: 1px;
+	margin: auto;
+	text-align: left;
+	margin-bottom: 0px;
+	/*overflow: inherit;*/
+	background: url() top center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* note: 
+
+background: #000 url(images/bgpage.jpg) top center no-repeat;
+
+*/
+
+
+

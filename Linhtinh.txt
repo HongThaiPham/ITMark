@@ -1,0 +1,123 @@
+﻿<%--                <!-- login logout --> 
+                <div id = "toptop" style="width: 100%; height: 37px; vertical-align: top; padding-top: 5px; text-align: CENTER; background: url(images/abc.png) top center no-repeat;">
+                    <div id = "topCon" style="text-align: right;">
+                      <bb><label for = "txtTen">Tên đăng nhập</label> <input type="text" value="" name="txtTen" id="txtTen" style=" "/> </bb>  
+                      <bb><label for = "txtPass">Password</label>  <input type="password" value="" name="txtPass" id="txtPass"  /> </bb>
+                      Lưu  <asp:CheckBox ID="cboGhiNho" Text="" runat="server"  textalign="left" width="20px"  style="padding-top: 2px; margin-top: 2px;"/> 
+                      <asp:Button ID="btnDangNhap" runat="server" Text="Đăng nhập" />
+                    </div>
+                    
+                </div> <!-- /login logout -->--%>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    <%-- xoa folder menu 
+    <link rel="stylesheet" href="images/menu/menu.css" type="text/css" />
+    <script type="text/javascript" language="javascript" src="images/menu/Library.js"></script>
+    <script type="text/javascript" language="javascript" src="images/menu/ArrMenu.js"></script>
+    <script type="text/javascript" language="javascript" src="images/menu/Menu.js"></script>
+    <script type="text/javascript" language="javaScript">
+			var PAGE_SITE=0;
+			var PAGE_FOLDER=1;	
+			var PAGE_ID=1;	
+			var DOMESTIC_IP=1;	
+			setTypingMode(1);
+    </script>
+
+    <script type="text/javascript" language="javaScript" src="../images/menu/Val.sjs"></script>--%>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/PhanHoi.aspx">Liên hệ</asp:HyperLink>
+                                    <ul>
+                                        <li><a href="#" class="parent"><span>Sub Item 1</span></a>
+                                            <ul>
+                                                <li><a href="#" class="parent"><span>Sub Item 1.1</span></a>
+                                                    <ul>
+                                                        <li><a href="#"><span>Sub Item 1.1.1</span></a></li>
+                                                        <li><a href="#"><span>Sub Item 1.1.2</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#"><span>Sub Item 1.2</span></a></li>
+                                                <li><a href="#"><span>Sub Item 1.3</span></a></li>
+                                                <li><a href="#"><span>Sub Item 1.4</span></a></li>
+                                                <li><a href="#"><span>Sub Item 1.5</span></a></li>
+                                                <li><a href="#"><span>Sub Item 1.6</span></a></li>
+                                                <li><a href="#" class="parent"><span>Sub Item 1.7</span></a>
+                                                    <ul>
+                                                        <li><a href="#"><span>Sub Item 1.7.1</span></a></li>
+                                                        <li><a href="#"><span>Sub Item 1.7.2</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><span>Sub Item 2</span></a></li>
+                                        <li><a href="#"><span>Sub Item 3</span></a></li>
+                                    </ul>
+                                </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+               
+             <!-- menu -->
+<%--             <table style="margin: 0px; width: 100%; height: 20px;  border: #ff9900 1px solid; line-height: 20px; padding:5px; ">
+                <tr>
+                   <td>     
+                    <asp:HyperLink ID="HyperLink2" runat="server" Height="28px" Width="75px" NavigateUrl="~/Default.aspx">Trang chủ</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" Height="28px" Width="75px">Giới thiệu</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server" Height="28px" Width="75px">Linh kiện</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink5" runat="server" Height="28px" Width="75px">Máy bộ</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink6" runat="server" Height="28px" Width="75px">Laptop</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink7" runat="server" Height="28px" Width="75px" NavigateUrl="~/PhanHoi.aspx">Liên hệ</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink8" runat="server" Height="28px" NavigateUrl="~/DangKy.aspx" Width="75px">Đăng ký</asp:HyperLink>
+                   </td>
+                </tr>
+             </table>--%>
+            <!--  / menu -->
+    
+    
+    
+    
+    
+    
+    
+    

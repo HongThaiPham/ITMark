@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Administrator_MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <style type="text/css">
+	input#txtTen{  padding-bottom: 0px; height: 17px; }
+</style>
+    <title>IT-Mark</title>
+    <link href="images/faviconDLM.ico" rel="shortcut icon" type="image/x-icon" />
+
+    
+    
+    <script language="javascript" type="text/javascript">
+// <!CDATA[
+// ]]>
+    </script>
+
+
+    <!--/*<script type="text/javascript" language="javaScript">checkCookies();</script>*/ -->
+    <script src="../DWConfiguration/ActiveContent/IncludeFiles/AC_RunActiveContent.jss "
+        type="text/javascript"></script>
+    <link href="css/styleDLM.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"
+        charset="utf-8"></script>
+    <script src="css/jqueryducluanmaster.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Uniform plugin -->
+    <script type="text/javascript" src="css/jqueryducluanmaster.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+$(function(){ 
+	$("label").inFieldLabels({
+		fadeOpacity: 0.1,
+		fadeDuration: 300
+	});
+ });
+    </script>
+
+    <!--[if lte IE 6]>
+	<style type="text/css" media="screen">
+			form label {
+					background: #fff;
+			}
+	</style>
+<![endif]-->
+    <link type="text/css" href="images/menu.css" rel="stylesheet" />
+    <script type="text/javascript" src="images/jquery.js"></script>
+    <script type="text/javascript" src="images/menu.js"></script>
+
+
+</head>
+<body style = " width: 100%; vertical-align: top; text-align: CENTER; background: #000 url(images/NenToanTrang.jpg) top center no-repeat;" >
+<div><a href="http://apycom.com/"></a></div>
+
+    <form id="form1" runat="server"> <!-- toàn trang -->
+	
+                 <!-- login logout --> 
+                <%--<div id = "toptop" style="width: 100%; height:43px; vertical-align: top; text-align: CENTER; background: url(images/NenLogin.gif) top center no-repeat;">
+                    <div id = "topCon" style="text-align: right;">
+                      <bb><label for = "txtTen">Tên đăng nhập</label> <input type="text" value="" name="txtTen" id="txtTen" style=" "/> </bb>  
+                      <bb><label for = "txtPass">Password</label>  <input type="password" value="" name="txtPass" id="txtPass"  /> </bb>
+                      Lưu  <asp:CheckBox ID="cboGhiNho" Text="" runat="server"  textalign="left" width="20px"  style="padding-top: 2px; margin-top: 2px;"/> 
+                      <asp:Button ID="btnDangNhap" runat="server" Text="Đăng nhập" OnClick="btnDangNhap_Click" />
+                    </div>
+                    
+                </div> <!-- /login logout -->--%>
+
+
+               
+
+            <div id = "toptop" style="width: 100%; height:42px; vertical-align: top; text-align: CENTER; background: url(images/NenLogin.png) top center no-repeat;" >
+               <strong> 
+               <div id = "topCon" style="text-align: right;">
+                   &nbsp;
+                   <asp:LinkButton ID="lbDangXuat" runat="server" OnClick="lbDangXuat_Click">Đăng xuất</asp:LinkButton>&nbsp;</div>
+               </strong>  
+            </div>         
+            
+             
+ <div style="width: 1050px; height: 15px; vertical-align: top; margin: auto; text-align: center; background: url(images/NenTren.png) top center repeat-x;"> <!-- Noi dung san pham -->
+ </div>	         
+ <!-- Container chứa thân trang-->   
+ <table  style="margin-top: 0px; width: 1070px;  text-align: CENTER; background:  url(images/Nen2Ben.png) top center repeat-y; margin: auto; vertical-align: top; text-align: left; ">
+ <tr><td>
+    <!-- chứa trang ben trong .... -->
+   <div id = "container" style="margin-top: 0px; margin: auto; vertical-align: top; text-align: left; " > 
+
+  
+            <div id = "header" style="margin-top: -2px; margin-bottom: 0px; height: 193px;"><!-- header Chứa banner -->
+            </div><!-- /header -->
+    
+           
+    
+            <!-- menu -->
+             <div id="menu">
+                   <ul class="menu" style=" margin-top: -36px;" >
+                       <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                           <Items>
+                               <asp:MenuItem NavigateUrl="~/Administrator/ThemSP.aspx" Text="Th&#234;m sản phẩm"
+                                   Value="New Item"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/Administrator/SuaXoaSP.aspx" Text="Sửa/X&#243;a sản phẩm"
+                                   Value="New Item"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/Administrator/ThemAdmin.aspx" Text="Th&#234;m Admin"
+                                   Value="New Item"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/Administrator/SuaXoaAdmin.aspx" Text="Sửa/X&#243;a Admin"
+                                   Value="New Item"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/Administrator/PhanHoiKH.aspx" Text="Phản hồi kh&#225;ch h&#224;ng"
+                                   Value="New Item"></asp:MenuItem>
+                               <asp:MenuItem NavigateUrl="~/Administrator/DonHang.aspx" Text="Đơn h&#224;ng" Value="New Item">
+                               </asp:MenuItem>
+                               <asp:MenuItem Text="Th&#234;m loại sản phẩm" Value="Th&#234;m loại sản phẩm" NavigateUrl="~/Administrator/ThemLoaiSP.aspx"></asp:MenuItem>
+                               <asp:MenuItem Text="Sửa/X&#243;a loại SP" Value="Sửa/X&#243;a loại SP" NavigateUrl="~/Administrator/SuaXoaLoaiSP.aspx"></asp:MenuItem>
+                           </Items>
+                       </asp:Menu>
+                   </ul>
+             </div>
+            <!--  / menu -->
+            
+
+
+    
+                <!-- Sidebar-->
+				<!-- /Sidebar-->
+				
+						
+							
+							
+							<div id = "sidemain"> <!-- Noi dung san pham -->
+                                <asp:ContentPlaceHolder ID="cphNoiDung" runat="server">
+                                </asp:ContentPlaceHolder>
+							</div><!-- / Noi dung san pham -->
+							
+							
+							
+						
+							
+			
+			
+    </div>
+  </td></tr>
+ </table> <!-- / Container -->
+ <div style="width: 1050px; height: 15px; vertical-align: top; margin: auto; text-align: center; background: url(images/NenDuoi.png) top center repeat-x;"> <!-- Noi dung san pham -->
+ </div>	
+  
+    
+    
+          <!-- footer-->
+    <div id = "footer" style="width: 100%; vertical-align: top; text-align: CENTER; background: url(images/footer.jpg) top center repeat-y; margin-top: 10px;">
+    <div id = "aa" style="text-align: LEFT;">
+	 <p>
+		<a href="#">Trang chủ</a> | 
+		<a href="#">Khuyến mãi</a> |
+		<a href="#">Tin tức</a> |
+		<a href="#">Giới thiệu</a> |
+		<a href="#">Thỏa thuận</a> |
+		<a href="#">Tuyển dụng</a> |
+		<a href="#">Download Driver</a> |
+		<a href="#">Giải thưởng</a> |	
+		<a href="#">Liên hệ</a>	</p> 
+        <br />
+		<br />
+		CÔNG TY TNHH TIN HỌC <b style="color:Red">Digital - Mark </b>  - Đơn vị chủ quản: Digital-Mark Corporation - Giấy phép MXH số 05-GXN-TTDT.<br />
+			105-107-109 Đồng Khởi, P.Tân Hòa, TP.Biên Hòa, Đồng Nai | Điện thoại: (061)3.917.999 - 3.828.999 - 3.82 89 89<br />
+			Fax: (061)3.823.799. P.Bảo hành: (061)3.917.999(Ext: 110)- 0908.35 36 63. Hotline: 091.889.6888 <br />
+			Email: <a href="mailto:ducluanmaster@gmail.vn">ducluanmaster@gmail.vn</a> | Website: <a href="http://www.simontran.com">www.simontran.com</a>
+	      <span id="Span1">Coppyright C 2010-2011 by IT-Mark </span> 
+     </div>
+	 
+    </div> <!--/footer-->
+    
+    
+</form> <!-- /  toàn  trang -->
+
+
+
+
+</body>
+</html>
